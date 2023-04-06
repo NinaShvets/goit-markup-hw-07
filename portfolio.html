@@ -14,6 +14,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
@@ -21,7 +22,8 @@
     <header class="header">
         <div class="container nav-container">
             <nav class="header-nav">
-                <a href="./index.html" class="link logo logo-link">Web<span class="logo-web">Studio</span></a>
+                <a href="./index.html" class="link logo logo-link">Web<span class="logo-web">Studio</span>
+                </a>
                 <ul class="site-nav list">
                     <li class="item"><a href="./index.html" class="nav-link link header-link">Studio</a></li>
                     <li class="item"><a href="./portfolio.html" class="current nav-link link header-link">Portfolio</a>
@@ -29,15 +31,67 @@
                     <li class="item"><a href="" class="nav-link link header-link">Contacts</a></li>
                 </ul>
             </nav>
+
             <address class="address">
-                <ul class="header-adress list">
+                <ul class="header-adress header-list list">
                     <li class="address-item"><a href="mailto:info@devstudio.com"
                             class="address-link link header-link">info@devstudio.com</a></li>
                     <li class="address-item"><a href="tel:+110001111111" class="address-link link header-link">+11 (000)
                             111-11-11</a></li>
                 </ul>
             </address>
+            <button type="button" class="btn-mobile js-open-menu"> <svg width="32" height="22">
+                    <use href="./images/symboldefs.svg#icon-hamburger" class="icon-hamburger"></use>
+
+                </svg> </button>
+
         </div>
+        <div class="mobile-menu js-menu-container">
+            <div class="container mobile-menu-container">
+                <button type="button" class="btn-mobile-close js-close-menu"><svg width="8" height="8"
+                        class="close-icon">
+                        <use href="./images/symboldefs.svg#icon-close"></use>
+                    </svg></button>
+                <ul class="list">
+                    <li class="item"><a href="./index.html" class="link mobile-nav">Studio</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link mobile-nav">Portfolio</a></li>
+                    <li class="item"><a href="./index.html" class="link current mobile-nav">Contacts</a></li>
+                </ul>
+                <div>
+                    <address class="">
+                        <ul class="header-adress list">
+                            <li class="mobile-item"><a href="tel:+110001111111" class="link mobile-tel">+11
+                                    (000)
+                                    111-11-11</a></li>
+                            <li class="mobile-item"><a href="mailto:info@devstudio.com"
+                                    class="link mobile-mail">info@devstudio.com</a></li>
+
+                        </ul>
+                    </address>
+                    <ul class="list mobile-list">
+                        <li class="mobile-icon-item team-item-icon"><a href="" class="team-link"><svg width="16"
+                                    height="16">
+                                    <use href="./images/symboldefs.svg#icon-instagram"></use>
+                                </svg></a></li>
+                        <li class="mobile-icon-item team-item-icon"><a href="" class="team-link"><svg width="16"
+                                    height="16">
+                                    <use href="./images/symboldefs.svg#icon-twitter"></use>
+                                </svg></a></li>
+                        <li class="mobile-icon-item team-item-icon"><a href="" class="team-link"><svg width="16"
+                                    height="16">
+                                    <use href="./images/symboldefs.svg#icon-facebook"></use>
+                                </svg></a></li>
+                        <li class="mobile-icon-item team-item-icon"><a href="" class="team-link"><svg width="16"
+                                    height="16">
+                                    <use href="./images/symboldefs.svg#icon-linkedin"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
     </header>
 
     <main>
@@ -244,6 +298,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
