@@ -1,0 +1,36 @@
+@media screen and (min-width: 480px) {
+  .container {
+    width: 426px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .modal {
+    width: 392px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+  .address {
+    display: none;
+  }
+  .features-icon {
+    display: none;
+  }
+  .section-img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 766px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
+}
