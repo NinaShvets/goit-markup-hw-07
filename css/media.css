@@ -250,4 +250,12 @@
     padding-top: 100px;
     padding-bottom: 120px;
   }
+  .backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.2);
+    transition: transform var(--main-duration-and-function);
+  }
+  .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+    transition: transform var(--main-duration-and-function);
+  }
 }
