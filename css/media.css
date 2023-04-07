@@ -91,6 +91,8 @@
     text-align: start;
   }
   .footer-container {
+    width: 582px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -101,9 +103,10 @@
     width: 264px;
   }
   .web-studio {
-    align-items: normal;
     margin-bottom: 0;
-    margin-left: 108px;
+  }
+  .footer-link {
+    text-align: start;
   }
   .media-text {
     text-align: start;
@@ -113,9 +116,7 @@
     margin-bottom: 0;
     gap: 0;
   }
-  .container-subscribe {
-    margin-left: 108px;
-  }
+
   .customers-list {
     column-gap: 24px;
   }
@@ -219,7 +220,7 @@
     padding-bottom: 0;
   }
   .section-img {
-    display: flex;
+    display: block;
   }
   .main-item {
     flex-basis: calc((100%-2 * 24px) / 3);
